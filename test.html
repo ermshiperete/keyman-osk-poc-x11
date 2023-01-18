@@ -5,10 +5,14 @@
 		<title>OSK POC</title>
 	</head>
 	<body>
+		<p>Simulating key press</p>
 		<button onclick="window.webkit.messageHandlers.button.postMessage('x');">x</button>
 		<button onclick="window.webkit.messageHandlers.button.postMessage('j');">j</button>
 		<br/>
 		<button onclick="window.webkit.messageHandlers.button.postMessage('x');">ខ</button>
 		<button onclick="window.webkit.messageHandlers.button.postMessage('j');">្</button>
+		<br/>
+		<p>Sending text directly to Keyman Engine</p>
+		<button onclick="window.webkit.messageHandlers.button.postMessage({ text: 'ខ្មែរ'});">ខ្មែរ</button>
 	</body>
 </html>
